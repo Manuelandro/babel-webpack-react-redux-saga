@@ -1,0 +1,23 @@
+{
+    // env doesn't include anything < Stage 4
+    "presets": [
+        [
+            "env",
+            {
+                "targets": {
+                    "browsers": ["last 4 versions", "ie >= 9"]
+                },
+                "useBuiltIns": true,
+                "debug": true
+            }
+        ],
+        "react"
+    ],
+    "ignore": ["node_modules"],
+    "plugins": [
+        "transform-object-rest-spread",
+        "transform-es2015-arrow-functions"
+    ],
+    "sourceMaps": true,
+    "retainLines": true
+}
