@@ -1,4 +1,4 @@
-# babel-webpack
+# .babelrc
 
 
 babel-preset-env accepts as targets the browserlist format
