@@ -2,10 +2,11 @@
     // env doesn't include anything < Stage 4
     "presets": [
         [
-            "env",
+            "@babel/preset-env",
             {
                 "targets": {
-                    "browsers": ["last 4 versions", "ie >= 9"]
+                    "browsers": ["last 4 versions", "ie >= 9"],
+                    "node": "current"
                 },
                 "useBuiltIns": true,
                 "debug": true
