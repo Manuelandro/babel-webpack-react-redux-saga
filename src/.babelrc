@@ -1,5 +1,4 @@
 {
-    // env doesn't include anything < Stage 4
     "presets": [
         [
             "@babel/preset-env",
@@ -9,16 +8,14 @@
                     "node": "current"
                 },
                 "useBuiltIns": "usage",
-                "debug": true
+                "debug": true,
+                "loose": true
             }
         ],
-        "react"
+        "@babel/preset-react"
     ],
     "ignore": ["node_modules"],
-    "plugins": [
-        "transform-object-rest-spread",
-        "transform-es2015-arrow-functions"
-    ],
+    "plugins": ["@babel/plugin-proposal-object-rest-spread"],
     "sourceMaps": true,
     "retainLines": true
 }
